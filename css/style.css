@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap');
 
 :root{
-    --aqua:#f4a460;
+    --brun:#f4a460;
 }
 
 *{
@@ -15,7 +15,7 @@
 }
 
 *::selection{
-    background:var(--aqua);
+    background:var(--brun);
     color:#333;
 }
 
@@ -33,7 +33,7 @@ html::-webkit-scrollbar-track{
 }
 
 html::-webkit-scrollbar-thumb{
-    background:var(--aqua);
+    background:var(--brun);
 }
 
 body{
@@ -63,7 +63,7 @@ section{
 }
 
 .btn:hover{
-    background:var(--aqua);
+    background:var(--brun);
 }
 
 .heading{
@@ -76,7 +76,7 @@ section{
 }
 
 .heading span{
-    color:var(--aqua);
+    color:var(--brun);
 }
 
 header{
@@ -99,7 +99,7 @@ header .user img{
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 1rem;
-    border:.7rem solid var(--aqua);
+    border:.7rem solid var(--brun);
 }
 
 header .user .name{
@@ -133,7 +133,7 @@ header .navbar ul li a{
 }
 
 header .navbar ul li a:hover{
-    background:var(--aqua);
+    background:var(--brun);
 }
 
 #menu{
@@ -166,7 +166,7 @@ header .navbar ul li a:hover{
 }
 
 .home h1 span{
-    color:var(--aqua);
+    color:var(--brun);
 }
 
 .home p{
@@ -191,7 +191,7 @@ header .navbar ul li a:hover{
 
 .about .row .info h3{
     font-size: 2rem;
-    color:var(--aqua);
+    color:var(--brun);
     padding:1rem 0;
     font-weight: normal;
 }
@@ -218,7 +218,7 @@ header .navbar ul li a:hover{
 
 .about .row .counter .box span{
     font-size: 4rem;
-    color:var(--aqua);
+    color:var(--brun);
 }
 
 .about .row .counter .box h3{
@@ -273,7 +273,7 @@ header .navbar ul li a:hover{
     text-align: center;
     font-size: 2rem;
     color:#fff;
-    background:var(--aqua);
+    background:var(--brun);
 }
 
 .hobbies .box-container{
@@ -360,7 +360,7 @@ header .navbar ul li a:hover{
 
 .contact .row .content .info h3 i{
     padding-right: 1rem;
-    color:var(--aqua);
+    color:var(--brun);
 }
 
 .top{
