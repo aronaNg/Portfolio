@@ -7,13 +7,19 @@
   burger.addEventListener('click', function () { links.classList.toggle('open'); });
   $('#links a').forEach(function (a) { a.addEventListener('click', function () { links.classList.remove('open'); }); });
 
-  // barre de progression, bouton retour, halo qui suit la souris
+  // bouton retour et halo qui suit la souris
   var bar = $('.progress')[0], top = $('.top')[0], glow = $('.glow')[0];
-  window.addEventListener('scroll', function () {
-    var h = document.documentElement;
-    bar.style.width = (h.scrollTop / (h.scrollHeight - h.clientHeight) * 100) + '%';
-    top.style.display = h.scrollTop > 600 ? 'grid' : 'none';
-  }, { passive: true });
+  if (bar && CSS.supports('animation-timeline: scroll()')) {
+    bar.classList.add('scroll-progress');
+  }
+  var topTrigger = $('.top-trigger')[0];
+  if (topTrigger && top) {
+    new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        top.style.display = entry.boundingClientRect.top < 0 ? 'grid' : 'none';
+      });
+    }).observe(topTrigger);
+  }
   window.addEventListener('mousemove', function (e) {
     glow.style.left = e.clientX + 'px'; glow.style.top = e.clientY + 'px';
   });
