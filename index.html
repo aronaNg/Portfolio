@@ -1,267 +1,185 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arona's portfolio </title>
-
-    <!-- font awesome cdn link  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-
-    <!-- custom css file link  -->
-    <link rel="stylesheet" href="css/style.css">
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Arona NGOM | Ingénieur Full-Stack</title>
+<meta name="description" content="Portfolio d'Arona NGOM, ingénieur en informatique (UTBM), développeur full-stack Laravel et React, spécialisé réseaux et cybersécurité.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Space+Grotesk:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
-<!-- header section starts  -->
+<div class="glow" aria-hidden="true"></div>
+<div class="progress" aria-hidden="true"></div>
 
-<header>
-
-    <div class="user">
-        <img src="images/profil.jpg" alt="ma photo de profil">
-        <h3 class="name">Arona NGOM</h3>
-        <p class="post">Web developer</p>
-    </div>
-
-    <nav class="navbar">
-        <ul>
-            <li><a href="#home">home</a></li>
-            <li><a href="#about">about</a></li>
-            <li><a href="#education">education</a></li>
-            <li><a href="#hobbies">hobbies</a></li>
-            <li><a href="#contact">contact</a></li>
-        </ul>
-    </nav>
-
+<header class="nav">
+  <a href="#home" class="logo">&lt;AN<span>/</span>&gt;</a>
+  <nav id="links">
+    <a href="#impact">Impact</a>
+    <a href="#parcours">Parcours</a>
+    <a href="#projets">Projets</a>
+    <a href="#stack">Stack</a>
+    <a href="#formation">Formation</a>
+    <a href="#contact" class="pill">Me contacter</a>
+  </nav>
+  <button id="burger" aria-label="Menu"><i class="fas fa-bars"></i></button>
 </header>
 
-<!-- header section ends -->
-
-<div id="menu" class="fas fa-bars"></div>
-
-<!-- home section starts  -->
-
-<section class="home" id="home">
-
-    <h3>HELLO WORLD !</h3>
-    <h1>I'M <span>Arona NGOM</span></h1>
-    <p>I am 21 years old, I am passionate about new technologies and IT.
-I let you see my portfolio. Good viewing 🧑‍💻✨
-    </p>
-    <a href="#about"><button class="btn">about me <i class="fas fa-user"></i></button></a>
-
+<main>
+<section class="hero" id="home">
+  <div class="blob b1"></div><div class="blob b2"></div>
+  <div class="hero-txt">
+    <p class="tag"><span class="dot"></span> Disponible pour un CDI, mobile en France</p>
+    <h1>Je construis des logiciels <span class="grad">qui tiennent en production.</span></h1>
+    <p class="lead">Arona NGOM, ingénieur en informatique diplômé de l'UTBM. Développeur full-stack Laravel et React, avec une spécialisation Réseaux et Cybersécurité. <span class="type" data-words='["Migration d&#39;ERP industriel","API REST sécurisées","CI/CD GitLab","Infrastructures réseau redondantes"]'></span><i class="caret"></i></p>
+    <div class="cta">
+      <a class="btn primary" href="#projets">Voir mes projets <i class="fas fa-arrow-right"></i></a>
+      <a class="btn" href="images/CV_Arona_NGOM_Developpeur_Full-Stack.pdf" download>Télécharger mon CV <i class="fas fa-download"></i></a>
+    </div>
+    <div class="social">
+      <a href="https://github.com/aronaNg" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+      <a href="https://linkedin.com/in/aronangom07" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      <a href="mailto:arona.ngom07@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+    </div>
+  </div>
+  <div class="term tilt">
+    <div class="bar"><i></i><i></i><i></i><span>profile.ts</span></div>
+<pre><span class="k">const</span> arona = {
+  <span class="p">role</span>: <span class="s">"Ingénieur Full-Stack"</span>,
+  <span class="p">diplome</span>: <span class="s">"UTBM 2026"</span>,
+  <span class="p">stack</span>: [<span class="s">"Laravel"</span>, <span class="s">"React"</span>, <span class="s">"Docker"</span>],
+  <span class="p">specialite</span>: <span class="s">"Réseaux &amp; Cybersécurité"</span>,
+  <span class="p">ia</span>: [<span class="s">"Cursor"</span>, <span class="s">"Claude"</span>],
+  <span class="p">base</span>: <span class="s">"Belfort, France"</span>,
+  <span class="p">ouvertA</span>: <span class="s">"CDI"</span>,
+};</pre>
+  </div>
 </section>
 
-<!-- home section ends -->
-
-<!-- about section starts  -->
-
-<section class="about" id="about">
-
-<h1 class="heading"> <span>about</span> me </h1>
-
-<div class="row">
-
-    <div class="info">
-        <h3> <span> name : </span> Arona NGOM </h3>
-        <h3> <span> age : </span> 21 </h3>
-        <h3> <span> qualification : </span> HND <small>in </small>Computer science </h3>
-        <h3> <span> post : </span> Web developer </h3>
-        <h3> <span> language : </span> french, english </h3>
-        <a href="images/CV_StageDeveloppeur.pdf"><button class="btn"> download CV <i class="fas fa-download"></i> </button></a>
-    </div>
-
-    <div class="counter">
-
-        <div class="box">
-            <span>2+</span>
-            <h3>years of experience</h3>
-        </div>
-
-        <div class="box">
-            <span>10+</span>
-            <h3>project completed</h3>
-        </div>
-
-        <div class="box">
-            <span>20+</span>
-            <h3>virtual communities</h3>
-        </div>
-
-        <div class="box">
-            <span>2+</span>
-            <h3>awards won</h3>
-        </div>
-
-    </div>
-
-</div>
-
+<section id="impact" class="reveal">
+  <div class="stats">
+    <div><b data-n="3" data-s=" ans">0</b><span>d'expérience en environnement industriel</span></div>
+    <div><b data-n="8" data-s="">0</b><span>modules ERP en production</span></div>
+    <div><b data-n="28" data-s="×">0</b><span>de gain moyen sur le temps de réponse de la page Tri</span></div>
+    <div><b data-n="6000" data-s="">0</b><span>clients gérés par l'ERP KEEPSO</span></div>
+  </div>
 </section>
 
-<!-- about section ends -->
-
-<!-- education section starts  -->
-
-<section class="education" id="education">
-
-<h1 class="heading"> my <span>education</span> </h1>
-
-<div class="box-container">
-
-    <div class="box">
-        <i class="fas fa-graduation-cap"></i>
-        <span>2016</span>
-        <h3>general certificate secondary education</h3>
-        <p>I got my general certificate secondary education. Rank: 2nd at the school</p>
-    </div>
-
-    <div class="box">
-        <i class="fas fa-graduation-cap"></i>
-        <span>2017</span>
-        <h3>first year of high school</h3>
-        <p>I am oriented towards the scientific series.</p>
-    </div>
-
-    <div class="box">
-        <i class="fas fa-graduation-cap"></i>
-        <span>2018</span>
-        <h3>Second year of high school</h3>
-        <p>I started the scientific series with maths, life and earth sciences and physics-chemistry as dominant.</p>
-    </div>
-
-    <div class="box">
-        <i class="fas fa-graduation-cap"></i>
-        <span>2019</span>
-        <h3>high school diploma</h3>
-        <p>In this year, I got my high school diploma with honors</p>
-    </div>
-
-    <div class="box">
-        <i class="fas fa-graduation-cap"></i>
-        <span>2020</span>
-        <h3>first year of university degree</h3>
-        <p>I started the first year in a university degree in computer technology, web programming</p>
-    </div>
-
-    <div class="box">
-        <i class="fas fa-graduation-cap"></i>
-        <span>2021</span>
-        <h3>Second year of university degree</h3>
-        <p>I started the second year in a university degree in computer technology, web programming and network</p>
-    </div>
-
-</div>
-
+<section id="parcours">
+  <h2 class="reveal"><small>01 / Parcours</small>Expériences <span class="grad">professionnelles</span></h2>
+  <div class="timeline">
+    <article class="tl reveal">
+      <time>Sept. 2023 – Août 2026</time>
+      <h3>Développeur Full-Stack (Alternance)</h3>
+      <p class="org">Tri Qualité Service (TQS) · Haute-Savoie, Besançon et Italie</p>
+      <ul>
+        <li>Conception et modernisation en autonomie de <b>KEEPSO</b>, ERP / MES / CRM interne (50 collaborateurs, 6 000 clients) : migration de PHP/MySQL vers Laravel, React, Redux et Docker.</li>
+        <li>Synchronisation bidirectionnelle des bases ancienne et nouvelle pour faire coexister les deux versions, sans incident bloquant.</li>
+        <li>API REST sécurisées (Sanctum), tests PHPUnit et Playwright E2E, pipeline GitLab CI/CD (staging puis production), Gitflow.</li>
+        <li>Ateliers de co-conception avec les utilisateurs métier, comité de suivi hebdomadaire avec la direction, sensibilisation des collègues à la sécurité informatique.</li>
+      </ul>
+    </article>
+    <article class="tl reveal">
+      <time>Mai – Sept. 2023</time>
+      <h3>Développeur Full-Stack (Stage)</h3>
+      <p class="org">SAD Marketing · Lille</p>
+      <ul><li>Amélioration de PredictOps, outil de prédiction des interventions des sapeurs-pompiers : refonte responsive, vues cartographiques, pages historiques et statistiques, formulaires Quasar, authentification MongoDB, scripts Python.</li></ul>
+    </article>
+    <article class="tl reveal">
+      <time>Juil. – Oct. 2022</time>
+      <h3>Développeur Web (Freelance)</h3>
+      <p class="org">MSHE / ELLIAD · Besançon</p>
+      <ul><li>Création du site des professeurs <a href="https://cooperer.univ-fcomte.fr" target="_blank" rel="noopener">cooperer.univ-fcomte.fr</a> (WordPress, PHP, Elementor) et formation des professeurs à son administration.</li></ul>
+    </article>
+  </div>
 </section>
 
-<!-- education section ends -->
-
-<!-- hobbies section starts  -->
-
-<section class="hobbies" id="hobbies">
-
-<h1 class="heading"> my <span>hobbies</span> </h1>
-
-<div class="box-container">
-
-      <div class="box">
-        <img src="images/iloveimg-compressed/livre.jpg" alt="image d'un livre">
-    </div>
-
-    <div class="box">
-        <img src="images/iloveimg-compressed/football.jpg" alt="image de foottball">
-    </div>
-
-    <div class="box">
-        <img src="images/iloveimg-compressed/weight.jpg" alt="image de lifting">
-    </div>
-
-    <div class="box">
-        <img src="images/iloveimg-compressed/basket.jpg" alt="image de basketball">
-    </div>
-
-
-    <div class="box">
-        <img src="images/iloveimg-compressed/voyages.jpg" alt="cinquieme image">
-    </div>
-
-    <div class="box">
-        <img src="images/jeuVideo.jpg" alt="sixieme image">
-    </div>
-    
-
-</div>
-
+<section id="projets">
+  <h2 class="reveal"><small>02 / Réalisations</small>Projets <span class="grad">sélectionnés</span></h2>
+  <div class="filters reveal">
+    <button class="on" data-f="all">Tous</button><button data-f="pro">Industriel</button><button data-f="net">Réseaux</button><button data-f="ia">IA</button><button data-f="web">Web &amp; Mobile</button>
+  </div>
+  <div class="grid">
+    <article class="card tilt wide reveal" data-c="pro">
+      <span class="badge">Alternance · 2023-2026</span>
+      <h3>KEEPSO, refonte d'un ERP industriel</h3>
+      <p>Migration complète d'un ERP / MES / CRM legacy vers une architecture moderne, 8 modules livrés (commercial, tri, comptabilité, pilotage, maintenance, achats, RH, paramétrage), requêtes SQL agrégées, procédures stockées et cache.</p>
+      <div class="tags"><i>Laravel</i><i>React</i><i>Redux</i><i>Docker</i><i>GitLab CI/CD</i><i>Playwright</i></div>
+      <a class="more" href="https://aronang.github.io/metrics" target="_blank" rel="noopener">Métriques du module Tri <i class="fas fa-external-link-alt"></i></a>
+    </article>
+    <article class="card tilt wide reveal" data-c="net">
+      <span class="badge">UTBM · oct. 2025 – janv. 2026</span>
+      <h3>Infrastructure réseau de type FAI</h3>
+      <p>Simulation GNS3 en équipe d'un fournisseur d'accès sécurisé et redondant : topologie en anneau, zéro point de défaillance unique (HSRP, CARP/pfsync, LACP, Keepalived), défense en profondeur avec IPS/IDS, DNS, web, mail et supervision Prometheus/Grafana, sessions PPPoE sur MikroTik et OpenWrt.</p>
+      <div class="tags"><i>GNS3</i><i>BIND9</i><i>Nginx</i><i>Postfix</i><i>Prometheus</i><i>Grafana</i><i>Tailscale</i></div>
+    </article>
+    <article class="card tilt reveal" data-c="ia">
+      <span class="badge">UTBM · 2024-2025</span>
+      <h3>DiaBot, chatbot pour patients diabétiques</h3>
+      <p>Assistant conversationnel pour répondre aux questions fréquentes, avec suivi de traitement, plans de repas et objectifs de santé, dans le respect de la vie privée.</p>
+      <div class="tags"><i>Rasa</i><i>PubMedBERT</i><i>Streamlit</i><i>MongoDB</i></div>
+    </article>
+    <article class="card tilt reveal" data-c="web">
+      <span class="badge">UTBM · 2025</span>
+      <h3>Quiz interactif Green IT</h3>
+      <p>Application de quiz qui fait explorer des scénarios futurs selon les choix numériques de l'utilisateur, accompagnée d'une présentation sur la sobriété numérique et la low-tech.</p>
+      <div class="tags"><i>React Native</i><i>UX</i><i>Éco-conception</i></div>
+    </article>
+    <article class="card tilt reveal" data-c="pro">
+      <span class="badge">SAD Marketing · 2023</span>
+      <h3>PredictOps</h3>
+      <p>Outil de prédiction des interventions des sapeurs-pompiers : vues cartographiques, statistiques et formulaires d'intervention.</p>
+      <div class="tags"><i>Vue.js</i><i>Quasar</i><i>MongoDB</i><i>Python</i></div>
+    </article>
+    <article class="card tilt reveal" data-c="web">
+      <span class="badge">Freelance · 2022</span>
+      <h3>Site de la MSHE et d'ELLIAD</h3>
+      <p>Site vitrine administrable par les professeurs eux-mêmes après formation.</p>
+      <div class="tags"><i>WordPress</i><i>PHP</i><i>Elementor</i></div>
+      <a class="more" href="https://cooperer.univ-fcomte.fr" target="_blank" rel="noopener">Voir le site <i class="fas fa-external-link-alt"></i></a>
+    </article>
+  </div>
+  <p class="also reveal">Aussi : gestion immobilière <b>Laravel</b> · application <b>React</b> Rick and Morty · application de concerts <b>Ionic</b> · e-commerce <b>Symfony</b> · quiz <b>Android</b> · jeu Snake <b>Java</b></p>
 </section>
 
-<!-- hobbies section ends -->
-
-<!-- contact section starts  -->
-
-<section class="contact" id="contact">
-
-<h1 class="heading"> <span>contact</span> me </h1>
-
-<div class="row">
-
-    <div class="content">
-
-        <h3 class="title">contact info</h3>
-
-        <div class="info">
-            <h3> <i class="fas fa-envelope"></i> arona.ngom07@	gmail.com </h3>
-            <h3> <i class="fas fa-phone"></i> +33 7 49 35 06 76 </h3>
-            <h3> <i class="fas fa-phone"></i> +77 134 20 62 </h3>
-            <h3> <i class="fas fa-map-marker-alt"></i> 90000 Belfort, France. </h3>
-        </div>
-
-    </div>
-
-    <form action="">
-
-        <input type="text" placeholder="name" class="box">
-        <input type="email" placeholder="email" class="box">
-        <input type="text" placeholder="project" class="box">
-        <textarea name="" id="" cols="30" rows="10" class="box message" placeholder="message"></textarea>
-        <button type="submit" class="btn"> send <i class="fas fa-paper-plane"></i> </button>
-
-    </form>
-
-</div>
-
+<section id="stack">
+  <h2 class="reveal"><small>03 / Compétences</small>Ma <span class="grad">stack</span></h2>
+  <div class="stack">
+    <div class="reveal"><h4><i class="fas fa-server"></i> Backend</h4><p><i>PHP</i><i>Laravel</i><i>API REST</i><i>Symfony</i><i>Node.js</i><i>Python</i></p></div>
+    <div class="reveal"><h4><i class="fas fa-laptop-code"></i> Frontend</h4><p><i>React</i><i>Redux</i><i>TypeScript</i><i>JavaScript</i><i>Vue.js</i><i>Angular</i></p></div>
+    <div class="reveal"><h4><i class="fas fa-database"></i> Données</h4><p><i>MySQL</i><i>MariaDB</i><i>PostgreSQL</i><i>MongoDB</i></p></div>
+    <div class="reveal"><h4><i class="fas fa-rocket"></i> DevOps et tests</h4><p><i>Docker</i><i>GitLab CI/CD</i><i>Git (Gitflow)</i><i>PHPUnit</i><i>Playwright</i><i>Linux</i></p></div>
+    <div class="reveal"><h4><i class="fas fa-shield-alt"></i> Réseaux et sécurité</h4><p><i>VLANs</i><i>Routage</i><i>Proxmox</i><i>AWS</i><i>IPS/IDS</i><i>GNS3</i></p></div>
+    <div class="reveal"><h4><i class="fas fa-robot"></i> IA et prototypage</h4><p><i>Cursor</i><i>Claude</i><i>Lovable</i><i>Rasa</i></p></div>
+  </div>
 </section>
 
-<!-- contact section ends -->
+<section id="formation">
+  <h2 class="reveal"><small>04 / Formation</small>Parcours <span class="grad">académique</span></h2>
+  <div class="edu">
+    <div class="reveal"><time>2023 – 2026</time><h3>Diplôme d'ingénieur en informatique</h3><p>UTBM, Belfort. Parcours informatique général, puis spécialisation Réseaux et Cybersécurité en 3e année (réseaux locaux/étendus, sécurité systèmes et réseaux, cloud infrastructure et virtualisation).</p></div>
+    <div class="reveal"><time>2022 – 2023</time><h3>Licence Pro TEPROW</h3><p>Technologies de Projets Web et Mobile, IUT Nord Franche-Comté. Mention Assez Bien.</p></div>
+    <div class="reveal"><time>2019 – 2021</time><h3>DUT Informatique</h3><p>IUT Belfort-Montbéliard.</p></div>
+    <div class="reveal"><time>2018 – 2019</time><h3>Baccalauréat scientifique</h3><p>Al Zahraa, Dakar. Mention Assez Bien.</p></div>
+  </div>
+  <p class="also reveal">Langues : français (natif), anglais (B2, Linguaskill) · Intérêts : veille IA, cybersécurité, cloud, football, documentaires · Permis B</p>
+</section>
 
+<section id="contact" class="reveal">
+  <div class="contact">
+    <h2><small>05 / Contact</small>Construisons quelque chose <span class="grad">d'ambitieux.</span></h2>
+    <p>Je recherche un CDI de développeur full-stack, mobile partout en France.</p>
+    <a class="btn primary big" href="mailto:arona.ngom07@gmail.com"><i class="fas fa-envelope"></i> arona.ngom07@gmail.com</a>
+    <p class="meta"><a href="tel:+33749350676"><i class="fas fa-phone"></i> 07 49 35 06 76</a> <span><i class="fas fa-map-marker-alt"></i> Belfort, France</span></p>
+  </div>
+</section>
+</main>
 
-<!-- scroll top button  -->
-
-<a href="#home" class="top">
-    <img src="images/scroll-top-img.png" alt="monter en haut">
-</a>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- jquery cdn link  -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
-<!-- custom js file link  -->
+<footer>© 2026 Arona NGOM</footer>
+<a href="#home" class="top" aria-label="Haut de page"><i class="fas fa-arrow-up"></i></a>
 <script src="js/script.js"></script>
-
-
 </body>
 </html>
