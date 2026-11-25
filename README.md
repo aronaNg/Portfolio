@@ -23,7 +23,3 @@ HTML5, CSS3 (variables, grid, flexbox, animations) et JavaScript natif. Aucune d
 ├── js/script.js
 └── images/          # CV au format PDF
 ```
-
-## Contact
-
-arona.ngom07@gmail.com · [LinkedIn](https://linkedin.com/in/aronangom07) · [GitHub](https://github.com/aronaNg)
