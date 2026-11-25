@@ -25,6 +25,13 @@ section{max-width:118rem;margin:0 auto;padding:9rem 2.4rem}
 .pill{background:var(--grad);color:#111!important;padding:.7rem 1.8rem;border-radius:5rem;font-weight:700}
 #burger{display:none;background:none;border:0;color:#fff;font-size:2rem;cursor:pointer}
 
+/* langue */
+#lang{display:flex;gap:.2rem;padding:.3rem;border:1px solid var(--line);border-radius:5rem}
+#lang button{font:600 1.2rem 'JetBrains Mono',monospace;color:var(--mut);background:none;border:0;padding:.5rem 1.2rem;border-radius:5rem;cursor:pointer;transition:.25s}
+#lang button:hover{color:#fff}
+#lang button.on{background:var(--grad);color:#111}
+@media(max-width:991px){#lang{margin-left:auto;margin-right:1rem}}
+
 /* hero */
 .hero{min-height:100vh;display:grid;grid-template-columns:1.2fr 1fr;gap:5rem;align-items:center;position:relative;padding-top:12rem}
 .blob{position:absolute;border-radius:50%;filter:blur(90px);opacity:.35;z-index:-1;animation:float 14s ease-in-out infinite}
